@@ -73,7 +73,7 @@
                 <SolidColorBrush Color="Blue" />
             </RadioButton.Tag>
             <!-- Esta puesto aquí porque sino al iniciar la aplicación no aplicaría el azul -->
-            <!-- por defecto debido a que el SolidColorBrush no se habría creado -->
+            <!-- por defecto debido a que el SolidColorBrush no se habría creado  -->
             <RadioButton.IsChecked>True</RadioButton.IsChecked>
         </RadioButton>
         <RadioButton
