@@ -24,5 +24,35 @@ namespace _5_FormatoTexto
         {
             InitializeComponent();
         }
+
+        private void negritaCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            formateadoTextBlock.FontWeight = FontWeights.Bold;
+        }
+
+        private void negritaCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            formateadoTextBlock.FontWeight = FontWeights.Normal;
+        }
+
+        private void cursivaCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            formateadoTextBlock.FontStyle = FontStyles.Italic;
+        }
+
+        private void cursivaCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            formateadoTextBlock.FontStyle = FontStyles.Normal;
+        }
+
+        private void colorButton_Checked(object sender, RoutedEventArgs e)
+        {
+            formateadoTextBlock.Foreground = (sender as RadioButton).Tag as SolidColorBrush;
+        }
+
+        private void entradaTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            formateadoTextBlock.Text = (sender as TextBox).Text;
+        }
     }
 }
